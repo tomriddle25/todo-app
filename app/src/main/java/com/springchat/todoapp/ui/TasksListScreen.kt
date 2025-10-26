@@ -20,7 +20,7 @@ import com.springchat.todoapp.ui.model.Task
 fun TasksListScreen(
     modifier: Modifier = Modifier,
     tasks: List<Task>,
-    onTaskCheckedChange: (Task, Boolean) -> Unit
+    onTaskCheckedChange: (Int, Boolean) -> Unit
 ) {
     // ? Why surface
     Surface(modifier = modifier) {
@@ -38,7 +38,7 @@ fun TasksListScreen(
                     time = task.endDate,
                     checked = task.isCompleted,
                     onCheckedChange = { completed ->
-                        onTaskCheckedChange(task, completed)
+                        onTaskCheckedChange(task.id, completed)
                     }
                 )
             }

@@ -15,7 +15,6 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.compose.rememberNavController
 import com.springchat.todoapp.ui.AppNav
 import com.springchat.todoapp.ui.theme.TODOAppTheme
 
@@ -31,7 +30,7 @@ class MainActivity : ComponentActivity() {
                         TopAppBar(title = { Text("TODO App") })
                     }
                 ) { innerPadding ->
-                    AppNav(modifier = Modifier.padding(innerPadding))
+                    AppNav(modifier = Modifier.padding(paddingValues = innerPadding))
                 }
             }
         }

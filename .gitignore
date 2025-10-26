@@ -1,15 +1,19 @@
+# Built files
 *.iml
 .gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
+
+# Local configuration
+/local.properties
 local.properties
+
+# IDE - IntelliJ/Android Studio
+# Ignore entire .idea directory except version control settings
+.idea/
+!.idea/vcs.xml
+
+# macOS
+.DS_Store
