@@ -1,4 +1,4 @@
-package com.springchat.todoapp.ui
+package com.springchat.todoapp.ui.taskslist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

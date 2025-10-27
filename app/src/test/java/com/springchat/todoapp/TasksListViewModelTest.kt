@@ -3,7 +3,7 @@
 package com.springchat.todoapp
 
 import com.springchat.todoapp.data.repository.FakeTasksRepository
-import com.springchat.todoapp.ui.TasksListViewModel
+import com.springchat.todoapp.ui.taskslist.TasksListViewModel
 import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
